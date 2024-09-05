@@ -40,10 +40,7 @@ export const Card = ({ product, onDelete }) => {
   return (
     <Link className={styles.link} to={`${product.id}`}>
       <div className={styles.root}>
-        <img
-          src={`/testWork/${product.imageUrl}`}
-          alt={`/testWork/${product.imageUrl}`}
-        />
+        <img src={product.imageUrl} alt={product.imageUrl} />
         <div>{product.title}</div>
         <div className={styles.icons}>
           <img
