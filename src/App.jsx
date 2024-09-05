@@ -5,7 +5,7 @@ import { NewCard } from "./components/newCard/component";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/testWork",
     element: <Main />,
   },
   {

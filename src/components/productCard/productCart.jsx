@@ -17,7 +17,7 @@ export const ProductCard = () => {
 
   return (
     <>
-      <Link to={"/"}>
+      <Link to={"/testWork"}>
         <img className={styles.back} src="/arrow-right.svg" />
       </Link>
       <div className={styles.root}>

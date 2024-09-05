@@ -66,7 +66,7 @@ export const NewCard = () => {
 
   return (
     <>
-      <Link to={"/"}>
+      <Link to={"/testWork"}>
         <img className={styles.back} src="/arrow-right.svg" />
       </Link>
       <form className={styles.root} onSubmit={createCard}>
