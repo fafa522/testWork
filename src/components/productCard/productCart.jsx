@@ -18,10 +18,13 @@ export const ProductCard = () => {
   return (
     <>
       <Link to={"/testWork"}>
-        <img className={styles.back} src="/arrow-right.svg" />
+        <img className={styles.back} src="/testWork/arrow-right.svg" />
       </Link>
       <div className={styles.root}>
-        <img src={product.imageUrl} alt={product.imageUrl} />
+        <img
+          src={`/testWork/${product.imageUrl}`}
+          alt={`/testWork/${product.imageUrl}`}
+        />
         <h2>{product.title}</h2>
         <span>{product.description}</span>
         <div>{product.price} Руб.</div>

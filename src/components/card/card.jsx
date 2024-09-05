@@ -38,9 +38,12 @@ export const Card = ({ product, onDelete }) => {
   };
 
   return (
-    <Link className={styles.link} to={`/${product.id}`}>
+    <Link className={styles.link} to={`${product.id}`}>
       <div className={styles.root}>
-        <img src={product.imageUrl} alt={product.imageUrl} />
+        <img
+          src={`testWork/${product.imageUrl}`}
+          alt={`testWork/${product.imageUrl}`}
+        />
         <div>{product.title}</div>
         <div className={styles.icons}>
           <img
@@ -48,7 +51,7 @@ export const Card = ({ product, onDelete }) => {
               e.preventDefault();
               favoriteToggle();
             }}
-            src={isFavorite ? "/like-2.svg" : "/like-1.svg"}
+            src={isFavorite ? "/testWork/like-2.svg" : "/testWork/like-1.svg"}
             alt="like"
           />
           <img
@@ -56,7 +59,7 @@ export const Card = ({ product, onDelete }) => {
               e.preventDefault();
               removeCard();
             }}
-            src="/trash.svg"
+            src="/testWork/trash.svg"
             alt="trash"
           />
         </div>

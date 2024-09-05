@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <Main />,
   },
   {
-    path: "/:productId",
+    path: "/testWork/:productId",
     element: <ProductCard />,
   },
   {
